@@ -25,9 +25,9 @@ public class Customer {
     @Column(name = "customer_salary")
     private double customerSalary;
 
-    @Column(name = "contact_numbers", columnDefinition = "json")
-    @JdbcTypeCode(SqlTypes.JSON)
-    private ArrayList<String> contactNumbers;
+//    @Column(name = "contact_numbers", columnDefinition = "TEXT")
+//    @JdbcTypeCode(SqlTypes.JSON)
+//    private ArrayList<String> contactNumbers;
 
     @Column(name = "nic")
     private String nic;
@@ -39,11 +39,11 @@ public class Customer {
 
     }
 
-    public int getCustomerId() {
+    public Integer getCustomerId() {
         return customerId;
     }
 
-    public void setCustomerId(int customerId) {
+    public void setCustomerId(Integer customerId) {
         this.customerId = customerId;
     }
 
@@ -71,13 +71,13 @@ public class Customer {
         this.customerSalary = customerSalary;
     }
 
-    public ArrayList<String> getContactNumbers() {
-        return contactNumbers;
-    }
-
-    public void setContactNumbers(ArrayList<String> contactNumbers) {
-        this.contactNumbers = contactNumbers;
-    }
+//    public ArrayList<String> getContactNumbers() {
+//        return contactNumbers;
+//    }
+//
+//    public void setContactNumbers(ArrayList<String> contactNumbers) {
+//        this.contactNumbers = contactNumbers;
+//    }
 
     public String getNic() {
         return nic;
@@ -102,7 +102,7 @@ public class Customer {
                 ", customerName='" + customerName + '\'' +
                 ", customerAddress='" + customerAddress + '\'' +
                 ", customerSalary=" + customerSalary +
-                ", contactNumbers=" + contactNumbers +
+//                ", contactNumbers=" + contactNumbers +
                 ", nic='" + nic + '\'' +
                 ", activeState=" + activeState +
                 '}';
@@ -113,7 +113,7 @@ public class Customer {
         this.customerName = customerName;
         this.customerAddress = customerAddress;
         this.customerSalary = customerSalary;
-        this.contactNumbers = contactNumbers;
+//        this.contactNumbers = contactNumbers;
         this.nic = nic;
         this.activeState = activeState;
     }

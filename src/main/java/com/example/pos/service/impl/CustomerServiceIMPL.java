@@ -21,7 +21,7 @@ public class CustomerServiceIMPL implements CustomerService {
         customer.setCustomerName(customerDTO.getCustomerName());
         customer.setCustomerAddress(customerDTO.getCustomerAddress());
         customer.setCustomerSalary(customerDTO.getCustomerSalary());
-        customer.setContactNumbers(customerDTO.getContactNumbers());
+//        customer.setContactNumbers(customerDTO.getContactNumbers());
         customer.setNic(customerDTO.getNic());
         customer.setActiveState(customerDTO.isActiveState());
 

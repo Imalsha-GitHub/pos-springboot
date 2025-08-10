@@ -11,19 +11,19 @@ public class CustomerDTO {
     private String customerName;
     private String customerAddress;
     private double customerSalary;
-    private ArrayList<String> contactNumbers;
+//    private ArrayList<String> contactNumbers;
     private String nic;
     private boolean activeState;
 
     public CustomerDTO() {
     }
 
-    public CustomerDTO(Integer customerId, String customerName, String customerAddress, double customerSalary, ArrayList<String> contactNumbers, String nic, boolean activeState) {
+    public CustomerDTO(Integer customerId, String customerName, String customerAddress, double customerSalary, String nic, boolean activeState) {
         this.customerId = customerId;
         this.customerName = customerName;
         this.customerAddress = customerAddress;
         this.customerSalary = customerSalary;
-        this.contactNumbers = contactNumbers;
+//        this.contactNumbers = contactNumbers;
         this.nic = nic;
         this.activeState = activeState;
     }
@@ -32,7 +32,7 @@ public class CustomerDTO {
         return customerId;
     }
 
-    public void setCustomerId(int customerId) {
+    public void setCustomerId(Integer customerId) {
         this.customerId = customerId;
     }
 
@@ -60,13 +60,13 @@ public class CustomerDTO {
         this.customerSalary = customerSalary;
     }
 
-    public ArrayList<String> getContactNumbers() {
-        return contactNumbers;
-    }
-
-    public void setContactNumbers(ArrayList<String> contactNumbers) {
-        this.contactNumbers = contactNumbers;
-    }
+//    public ArrayList<String> getContactNumbers() {
+//        return contactNumbers;
+//    }
+//
+//    public void setContactNumbers(ArrayList<String> contactNumbers) {
+//        this.contactNumbers = contactNumbers;
+//    }
 
     public String getNic() {
         return nic;
@@ -91,7 +91,7 @@ public class CustomerDTO {
                 ", customerName='" + customerName + '\'' +
                 ", customerAddress='" + customerAddress + '\'' +
                 ", customerSalary=" + customerSalary +
-                ", contactNumbers=" + contactNumbers +
+//                ", contactNumbers=" + contactNumbers +
                 ", nic='" + nic + '\'' +
                 ", activeState=" + activeState +
                 '}';
