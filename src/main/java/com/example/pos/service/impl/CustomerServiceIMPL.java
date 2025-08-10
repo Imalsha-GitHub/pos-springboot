@@ -27,4 +27,21 @@ public class CustomerServiceIMPL implements CustomerService {
 
         customerRepo.save(customer);
     }
+
+    @Override
+    public String updateCustomer(CustomerDTO customerDTO) {
+        if (customerRepo.existsById(customerDTO.getCustomerId())) {
+             Customer customer = customerRepo.getById(customerDTO.getCustomerId());
+             customer.setCustomerName(customerDTO.getCustomerName());
+             customer.setCustomerAddress((customerDTO.getCustomerAddress()));
+             customer.setCustomerSalary(customerDTO.getCustomerSalary());
+
+             customerRepo.save(customer);
+            return "updated";
+
+        }else {
+            System.out.println("no customer found for that ID");
+            return "no customer found for that ID";
+        }
+    }
 }

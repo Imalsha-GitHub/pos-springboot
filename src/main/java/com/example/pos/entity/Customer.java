@@ -1,10 +1,6 @@
 package com.example.pos.entity;
 
-import com.vladmihalcea.hibernate.type.json.JsonType;
-import jakarta.persistence.*;
-import org.hibernate.annotations.Type;
-import org.hibernate.annotations.JdbcTypeCode;
-import org.hibernate.type.SqlTypes;
+import javax.persistence.*;
 import java.util.ArrayList;
 
 @Entity
@@ -71,10 +67,6 @@ public class Customer {
         this.customerSalary = customerSalary;
     }
 
-//    public ArrayList<String> getContactNumbers() {
-//        return contactNumbers;
-//    }
-//
 //    public void setContactNumbers(ArrayList<String> contactNumbers) {
 //        this.contactNumbers = contactNumbers;
 //    }

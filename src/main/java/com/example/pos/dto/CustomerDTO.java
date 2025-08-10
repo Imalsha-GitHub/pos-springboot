@@ -1,11 +1,5 @@
 package com.example.pos.dto;
 
-import jakarta.persistence.Column;
-import org.hibernate.annotations.JdbcTypeCode;
-import org.hibernate.type.SqlTypes;
-
-import java.util.ArrayList;
-
 public class CustomerDTO {
     private Integer customerId;
     private String customerName;
@@ -93,8 +87,8 @@ public class CustomerDTO {
                 ", customerSalary=" + customerSalary +
 //                ", contactNumbers=" + contactNumbers +
                 ", nic='" + nic + '\'' +
+
                 ", activeState=" + activeState +
                 '}';
     }
 }
-

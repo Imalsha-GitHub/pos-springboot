@@ -18,4 +18,10 @@ public class CustomerController {
         customerService.addCustomer(customerDTO);
         return "Customer saved successfully";
     }
+
+    @PutMapping(path = "/update")
+    public String updateCustomer(@RequestBody CustomerDTO customerDTO) {
+        String updated = customerService.updateCustomer(customerDTO);
+        return updated;
+    }
 }
