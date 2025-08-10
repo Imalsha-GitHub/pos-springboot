@@ -18,7 +18,7 @@ public class CustomerDTO {
     public CustomerDTO() {
     }
 
-    public CustomerDTO(int customerId, String customerName, String customerAddress, double customerSalary, ArrayList<String> contactNumbers, String nic, boolean activeState) {
+    public CustomerDTO(Integer customerId, String customerName, String customerAddress, double customerSalary, ArrayList<String> contactNumbers, String nic, boolean activeState) {
         this.customerId = customerId;
         this.customerName = customerName;
         this.customerAddress = customerAddress;
@@ -28,7 +28,7 @@ public class CustomerDTO {
         this.activeState = activeState;
     }
 
-    public int getCustomerId() {
+    public Integer getCustomerId() {
         return customerId;
     }
 
